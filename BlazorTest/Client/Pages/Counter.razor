@@ -1,0 +1,18 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @currentCount</p>
+
+<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
+@code {
+    private string currentCount = "";
+
+    private void IncrementCount()
+    {
+        var test = new ClassLibrary4dot8.Class1();
+        //var test = new ClassLibrary5.Class1();
+        currentCount = test.Method();
+    }
+}
